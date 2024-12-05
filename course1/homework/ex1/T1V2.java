@@ -1,3 +1,5 @@
+package course1.homework.ex1;
+
 public class T1V2 {
 
     public static void main(String[] args) {

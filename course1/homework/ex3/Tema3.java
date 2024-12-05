@@ -1,4 +1,5 @@
-import javax.swing.*;
+package course1.homework.ex3;
+
 import java.util.Scanner;
 
 public class Tema3 {

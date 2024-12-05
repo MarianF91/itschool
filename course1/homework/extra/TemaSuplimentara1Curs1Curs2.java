@@ -1,3 +1,5 @@
+package course1.homework.extra;
+
 import java.util.Scanner;
 
 public class TemaSuplimentara1Curs1Curs2 {
