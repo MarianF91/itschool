@@ -15,7 +15,7 @@ public class Challenge5 {
 
         boolean trueValue = (number > 0);
 
-        System.out.println("Your number is a positive number." + trueValue);
-        System.out.println("Your number is a negative number." + trueValue);
+        System.out.println("Your number is a positive number. " + trueValue);
+        System.out.println("Your number is a negative number. " + trueValue);
         }
     }
