@@ -13,9 +13,9 @@ public class Challenge5 {
         System.out.println("Introduce your number:");
         double number = scan.nextDouble();
 
-        boolean trueValue = (number > 0);
+        boolean trueValue = (number < 0);
 
-        System.out.println("Your number is a positive number. " + trueValue);
+        System.out.println("Your number is a positive number. " + !(trueValue));
         System.out.println("Your number is a negative number. " + trueValue);
         }
     }
