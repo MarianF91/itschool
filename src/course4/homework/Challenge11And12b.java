@@ -24,23 +24,19 @@ public class Challenge11And12b {
         //printed messages
         if (isFirstNumberInRange) {
             System.out.println("Your first number is within range (1-10)."); //printed result if the first range condition is met;
-        }
-        else {
+        }  else {
             System.out.println("Your first number is outside range (1-10)."); //printed result if the second range condition is met;
         }
         if (isSecondNumberInRange) {
             System.out.println("Your second number is within range (10-100)."); //printed result if the first comparison condition is met;
-        }
-        else {
+        } else {
             System.out.println("Your first number is outside range (10-100)."); //printed result if the second comparison condition is met;
         }
         if (isFirstNumberHigher) {
             System.out.println(firstNumber + " is higher than " + secondNumber); //printed result if no comparison condition is met;
-        }
-        else if (isFirstNumberLower) {
+        } else if (isFirstNumberLower) {
             System.out.println(firstNumber + " is lower than " + secondNumber);
-        }
-        else {
+        } else {
             System.out.println("Your numbers are equal. " + firstNumber + " = " + secondNumber);
         }
     }
