@@ -186,7 +186,7 @@ public class Numerology {
         }
 
         System.out.println("This is what Numerology had to say about " + firstName + " " + lastName +
-                ". But what does " + firstName + " " + lastName + " has to say about " + firstName + " " + lastName + "?");
+                ". But what does " + firstName + " " + lastName + " have to say about " + firstName + " " + lastName + "?");
        }
 
        //method to calculate the number of destiny
