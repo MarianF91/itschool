@@ -49,11 +49,15 @@ public class Numerology {
 
         scan.nextLine();
 
+        System.out.println("\n");
+
         System.out.println("Please tell me your first name:");
         firstName = scan.nextLine();
 
         System.out.println("Please tell me your last name:");
         lastName = scan.nextLine();
+
+        System.out.println("\n");
 
         //printing results;
         System.out.println("The Destiny Number represents pre-established path in life and the lessons you must learn.");
