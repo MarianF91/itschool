@@ -27,9 +27,9 @@ public class Numerology {
         }
 
         if (yearOfBirth % 4 == 0 && yearOfBirth % 100 != 0 || yearOfBirth % 400 == 0) {
-            System.out.println("You were born in a leap year.");
+            System.out.println("You were born in a leap year.\n");
         } else {
-            System.out.println("Your were not born in a leap year.");
+            System.out.println("Your were not born in a leap year.\n");
         }
 
         System.out.println("Please tell me the month of your birth (between 1 and 12):");
@@ -60,129 +60,129 @@ public class Numerology {
         System.out.println("Your Destiny Number is: " + mainNumberOfDestiny());
         if (mainNumberOfDestiny() == 1) {
             System.out.println("This means that you are an independent person, an innovator or, why not, a leader. " +
-                    "Be careful not to become stubborn or egocentric.");
+                    "Be careful not to become stubborn or egocentric.\n");
         } else if (mainNumberOfDestiny() == 2) {
             System.out.println("This means that you are a diplomat and a cooperative and intuitive person. Try " +
-                    "not to become" + "passive and undecided.");
+                    "not to become" + "passive and undecided\n.");
         } else if (mainNumberOfDestiny() == 3) {
             System.out.println("This means that you are creative, expressive and optimistic. Try not to become shallow " +
-                    "and erratic.");
+                    "and erratic.\n");
         } else if (mainNumberOfDestiny() == 4) {
             System.out.println("This means that you are practical, organized and reliable. Try not to become stubborn " +
-                    "and rigid.");
+                    "and rigid.\n");
         } else if (mainNumberOfDestiny() == 5) {
             System.out.println("This means that you are an adventurer, a free spirit and an adaptable person. Try not " +
-                    "to become unpredictable and unreliable.");
+                    "to become unpredictable and unreliable.\n");
         } else if (mainNumberOfDestiny() == 6) {
             System.out.println("This means that you are harmonious, loving and responsible. Try not to become possessive " +
-                    "or focused only on pleasure.");
+                    "or focused only on pleasure.\n");
         } else if (mainNumberOfDestiny() == 7) {
             System.out.println("This means that you are wise, spiritual and analytic. Try not to become withdrawn and " +
-                    "solitary.");
+                    "solitary.\n");
         } else if (mainNumberOfDestiny() == 8) {
             System.out.println("This means that you are strong, ambitious and materialistic. Try not to become arrogant and " +
-                    "manipulative.");
+                    "manipulative.\n");
         } else {
             System.out.println("This means that you are wise, selfless and a humanitarian. Try not become too idealistic and " +
-                    "detached.");
+                    "detached.\n");
         }
 
         System.out.println("The Expression Number represents how you express yourself into the world and how you manifest your talents.");
         System.out.println("Your Expression Number is: " + mainExpressionNumber());
         if (mainExpressionNumber() == 1) {
             System.out.println("This means that you are natural leader and a project starter. Try not to become too dominant and " +
-                    "authoritarian.");
+                    "authoritarian.\n");
         } else if (mainExpressionNumber() == 2) {
             System.out.println("This means that you are a diplomat, cooperative and a good communicator. Try not to become passive and " +
-                    "undecided.");
+                    "undecided.\n");
         } else if (mainExpressionNumber() == 3) {
             System.out.println("This means that you are a diplomat, cooperative and a good communicator. Try not to become passive and " +
-                    "undecided.");
+                    "undecided.\n");
         } else if (mainExpressionNumber() == 4) {
             System.out.println("This means that you are a practical, organized and a good builder. Try not to become rigid and " +
-                    "stubborn.");
+                    "stubborn.\n");
         } else if (mainExpressionNumber() == 5) {
             System.out.println("This means that you are an adventurer, a free spirit and an adaptable person. Try not " +
-                    "to become unpredictable and unreliable.");
+                    "to become unpredictable and unreliable.\n");
         } else if (mainExpressionNumber() == 6) {
             System.out.println("This means that you are harmonious, loving and responsible. Try not to become possessive " +
-                    "or focused only on pleasure.");
+                    "or focused only on pleasure.\n");
         } else if (mainExpressionNumber() == 7) {
             System.out.println("This means that you are wise, spiritual and analytic. Try not to become withdrawn and " +
-                    "solitary.");
+                    "solitary.\n");
         } else if (mainExpressionNumber() == 8) {
             System.out.println("This means that you are strong, ambitious and materialistic. Try not to become arrogant and " +
-                    "manipulative.");
+                    "manipulative.\n");
         } else {
             System.out.println("This means that you are wise, selfless and a humanitarian. Try not become too idealistic and " +
-                    "detached.");
+                    "detached.\n");
         }
 
         System.out.println("The Soul Urge Number represents your inner desires, your emotional needs and your motivations.");
         System.out.println("Your soul urge number is: " + mainSoulUrgeNumber());
         if (mainSoulUrgeNumber() == 1) {
-            System.out.println("Your soul desires: independence and affirmation. Try not to become egocentric and competitive.");
+            System.out.println("Your soul desires: independence and affirmation. Try not to become egocentric and competitive.\n");
         } else if (mainSoulUrgeNumber() == 2) {
-            System.out.println("Your soul desires: harmony and relationships. Try not to become passive and undecided.");
+            System.out.println("Your soul desires: harmony and relationships. Try not to become passive and undecided.\n");
         } else if (mainSoulUrgeNumber() == 3) {
-            System.out.println("Your soul desires: expressiveness and creativity. Try not to become shallow and erratic.");
+            System.out.println("Your soul desires: expressiveness and creativity. Try not to become shallow and erratic.\n");
         } else if (mainSoulUrgeNumber() == 4) {
-            System.out.println("Your soul desires: stability and safety. Try not to become rigid and stubborn.");
+            System.out.println("Your soul desires: stability and safety. Try not to become rigid and stubborn.\n");
         } else if (mainSoulUrgeNumber() == 5) {
-            System.out.println("Your soul desires: freedom and adventure. Try not to become unpredictable and unreliable.");
+            System.out.println("Your soul desires: freedom and adventure. Try not to become unpredictable and unreliable.\n");
         } else if (mainSoulUrgeNumber() == 6) {
-            System.out.println("Your soul desires: love and family. Try not to become possessive and interested only in pleasure.");
+            System.out.println("Your soul desires: love and family. Try not to become possessive and interested only in pleasure.\n");
         } else if (mainSoulUrgeNumber() == 7) {
-            System.out.println("Your soul desires: knowledge and wisdom. Try not to become withdrawn and solitary.");
+            System.out.println("Your soul desires: knowledge and wisdom. Try not to become withdrawn and solitary.\n");
         } else if (mainSoulUrgeNumber() == 8) {
-            System.out.println("Your soul desires: power and material success. Try not to become arrogant and manipulative.");
+            System.out.println("Your soul desires: power and material success. Try not to become arrogant and manipulative.\n");
         } else {
             System.out.println("Your soul desires: to help others and make the world a better place. Try not to become too " +
-                    "idealistic and detached.");
+                    "idealistic and detached.\n");
         }
 
         System.out.println("The Personality Number represents how you present yourself to the world and interact with others.");
         System.out.println("Your Personality Number is: " + mainPersonalityNumber());
         if (mainPersonalityNumber() == 1) {
-            System.out.println("Good traits: independent, confident, a leader.\n" + "Bad traits: arrogant, authoritarian.");
+            System.out.println("Good traits: independent, confident, a leader.\n" + "Bad traits: arrogant, authoritarian.\n");
         } else if (mainPersonalityNumber() == 2) {
-            System.out.println("Good traits: diplomat, cooperative, adaptable.\n" + "Bad traits: undecided, passive.");
+            System.out.println("Good traits: diplomat, cooperative, adaptable.\n" + "Bad traits: undecided, passive.\n");
         } else if (mainPersonalityNumber() == 3) {
-            System.out.println("Good traits: sociable, expressive, optimistic.\n" + "Bad traits: shallow, erratic.");
+            System.out.println("Good traits: sociable, expressive, optimistic.\n" + "Bad traits: shallow, erratic.\n");
         } else if (mainPersonalityNumber() == 4) {
-            System.out.println("Good traits: practical, organized, reliable.\n" + "Bad traits: rigid, stubborn.");
+            System.out.println("Good traits: practical, organized, reliable.\n" + "Bad traits: rigid, stubborn.\n");
         } else if (mainPersonalityNumber() == 5) {
-            System.out.println("Good traits: adventurous, free, adaptable.\n" + "Bad traits: unpredictable, unreliable.");
+            System.out.println("Good traits: adventurous, free, adaptable.\n" + "Bad traits: unpredictable, unreliable.\n");
         } else if (mainPersonalityNumber() == 6) {
-            System.out.println("Good traits: harmonious, responsible, loving.\n" + "Bad traits: possessive, interested only in pleasures.");
+            System.out.println("Good traits: harmonious, responsible, loving.\n" + "Bad traits: possessive, interested only in pleasures.\n");
         } else if (mainPersonalityNumber() == 7) {
-            System.out.println("Good traits: wise, spiritual, analytic.\n" + "Bad traits: withdrawn, solitary.");
+            System.out.println("Good traits: wise, spiritual, analytic.\n" + "Bad traits: withdrawn, solitary.\n");
         } else if (mainPersonalityNumber() == 8) {
-            System.out.println("Good traits: ambitious, strong, materialistic.\n" + "Bad traits: arrogant, manipulative.");
+            System.out.println("Good traits: ambitious, strong, materialistic.\n" + "Bad traits: arrogant, manipulative.\n");
         } else {
-            System.out.println("Good traits: humanitarian, wise, altruistic.\n" + "Bad traits: idealistic, detached.");
+            System.out.println("Good traits: humanitarian, wise, altruistic.\n" + "Bad traits: idealistic, detached.\n");
         }
 
         System.out.println("The Maturity Number represents your potential for personal growth and overcoming obstacles.");
         System.out.println("Your maturity number is: " + mainMaturityNumber());
         if (mainMaturityNumber() == 1) {
-            System.out.println("You need to take on responsibilities and become independent.");
+            System.out.println("You need to take on responsibilities and become independent.\n");
         } else if (mainMaturityNumber() == 2) {
-            System.out.println("You need to find balance between your needs and the needs of others.");
+            System.out.println("You need to find balance between your needs and the needs of others.\n");
         } else if (mainMaturityNumber() == 3) {
-            System.out.println("You need to find a way to express yourself and your creativity.");
+            System.out.println("You need to find a way to express yourself and your creativity.\n");
         } else if (mainMaturityNumber() == 4) {
-            System.out.println("You need to build a solid foundation on which you can organise your life.");
+            System.out.println("You need to build a solid foundation on which you can organise your life.\n");
         } else if (mainMaturityNumber() == 5) {
-            System.out.println("You need to explore the world and overcome your limits.");
+            System.out.println("You need to explore the world and overcome your limits.\n");
         } else if (mainMaturityNumber() == 6) {
             System.out.println("You need to cultivate your relationships and start a family.");
         } else if (mainMaturityNumber() == 7) {
-            System.out.println("You need to further your knowledge and increase your spirituality.");
+            System.out.println("You need to further your knowledge and increase your spirituality.\n");
         } else if (mainMaturityNumber() == 8) {
-            System.out.println("You need to use your power and influence in a constructive way.");
+            System.out.println("You need to use your power and influence in a constructive way.\n");
         } else {
-            System.out.println("You need to serve humanity and leave behind a positive legacy.");
+            System.out.println("You need to serve humanity and leave behind a positive legacy.\n");
         }
 
         System.out.println("This is what Numerology had to say about " + firstName + " " + lastName +
