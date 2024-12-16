@@ -49,8 +49,6 @@ public class Numerology {
 
         scan.nextLine();
 
-        System.out.println("\n");
-
         System.out.println("Please tell me your first name:");
         firstName = scan.nextLine();
 
