@@ -18,15 +18,10 @@ public class Challenge8 {
         }
 
         int factorial = number; //variable to give factorial the original value of our number in order to start the correct math;
-        int originalNumber = number; //variable to save the original value of our number for later use;
 
-        //the following loop checks if our number is higher than one, then, if the condition is met, multiplies the original value of the variable
-        //factorial with (number-1), overwrites it, afther which, number goes down by 1 and the process is repeated until number = 1, while factorial
-        //gets multiplied with number-1 and gets his older values overwritten by the new ones.
-        while (number > 1){
-            factorial = factorial * (number-1);
-            number--;
+        for (int i = 2; i <= number; i++) {
+            factorial *= i - 1;
         }
-        System.out.println("The factorial of the number " + originalNumber + " is " + factorial + ".");
+        System.out.println("The factorial of the number " + number + " is " + factorial + ".");
     }
 }

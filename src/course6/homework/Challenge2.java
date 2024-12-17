@@ -11,6 +11,6 @@ public class Challenge2 {
         String secondString = "12";
 
         System.out.println("Are numbers equal? " + (firstNumber == secondNumber));
-        System.out.println("Are strings equal? "+ (firstString.equals(secondString)));
+        System.out.println("Are strings equal? " + (firstString.equals(secondString)));
     }
 }

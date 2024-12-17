@@ -16,12 +16,12 @@ public class Challenge7 {
         System.out.println("Enter the third side:");
         double sideThree = scan.nextDouble();
 
-        if ((sideOne != sideTwo) && (sideTwo != sideThree) && (sideOne != sideThree)) {
-            System.out.println("The triangle is Scalene.");
-        } else if ((sideOne == sideTwo) && (sideTwo == sideThree )) {
+        if (sideOne == sideTwo && sideTwo == sideThree) {
             System.out.println("The triangle is Equilateral.");
-        } else {
+        } else if (sideOne == sideTwo || sideOne == sideThree || sideTwo == sideThree) {
             System.out.println("The triangle is Isosceles.");
+        } else {
+            System.out.println("The triangle is Scalene.");
         }
     }
 }

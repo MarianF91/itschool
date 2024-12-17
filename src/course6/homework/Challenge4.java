@@ -16,12 +16,12 @@ public class Challenge4 {
 
         if (firstHeight == secondHeight) {
             System.out.println("The values must be different.");
-            
+
             System.exit(1);
         }
-        
+
         String maximumHeight = (firstHeight > secondHeight) ? ((firstHeight + "is the higher value, because ") + (firstHeight + " > " + secondHeight))
-        : ((secondHeight + " is the higher value, because ") + (secondHeight + " > " + firstHeight));
+                : ((secondHeight + " is the higher value, because ") + (secondHeight + " > " + firstHeight));
 
         System.out.println(maximumHeight);
     }

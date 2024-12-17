@@ -16,6 +16,7 @@ public class Challenge3 {
             System.out.println("Invalid input.");
         }
 
-        String output = (age > 18) ? "I am adult." : "I am a child.";
+        String output = (age >= 18) ? "I am an adult." : "I am a child.";
+        System.out.println(output);
     }
 }

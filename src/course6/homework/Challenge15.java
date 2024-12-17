@@ -17,12 +17,17 @@ public class Challenge15 {
         System.out.println("Enter your password:");
         String password = scan.nextLine();
 
-        if (user.equals("student") && password.equals("Java")){
+        boolean hasUsername = "student".equals(user);
+        boolean hasPassword = "Java".equals(password);
+
+        if (hasUsername && hasPassword) {
             System.out.println("Authentication successful");
-        } else if (user.equals("student") && !password.equals("Java")) {
-            System.out.println("Password is incorrect.");
         } else {
-            System.out.println("Authentication failed.");
+            if (hasUsername) {
+                System.out.println("Password is incorrect.");
+            } else {
+                System.out.println("Authentication failed.");
+            }
         }
     }
 }

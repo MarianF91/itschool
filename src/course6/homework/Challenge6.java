@@ -12,9 +12,9 @@ public class Challenge6 {
 
         int temperature = scan.nextInt();
 
-        if (temperature > 30){
+        if (temperature > 30) {
             System.out.println("Ouch! Hot!");
-        } else if (temperature <= 30 && temperature >= 20) {
+        } else if (temperature >= 20) {
             System.out.println("Warm...");
         } else {
             System.out.println("Brrr! Cold!");

@@ -8,14 +8,12 @@ public class Challenge14 {
 
         System.out.println("Original number: " + number);
 
-        while (number > 80) {
-            number-=1;
-        }
+        number -= 20;
 
-        if (number == 80){
-            System.out.println("Number after being decreased by 1 for 20 times: " + number);
-            number *= 2;
-            System.out.println("Number after being decreased by 1 for 20 times and then multiplied by 2: " + number);
-        }
+        System.out.println("Number after being decreased by 20: " + number);
+
+        number *= 2;
+
+        System.out.println("Number after being decreased by 20 and then multiplied by 2: " + number);
     }
 }
