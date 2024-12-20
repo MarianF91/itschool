@@ -12,11 +12,17 @@ public class Challenge6 {
         Scanner scan = new Scanner(System.in);
 
         double sum = 0;
-        double number = 0;
-        while (number != -1) {
+        double number;
+        while (true) {
 
-            System.out.println("Enter a new number.");
+            System.out.println("Enter a new number:");
             number = scan.nextDouble();
+
+            if (number == -1) {
+                System.out.println("End of program.");
+                break;
+            }
+
             sum = sum + number;
         }
         System.out.println("Your final result is: " + sum);
