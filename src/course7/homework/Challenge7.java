@@ -18,10 +18,9 @@ public class Challenge7 {
             System.out.println("Enter a number:");
             guess = scan.nextDouble();
 
-            if (guess < 0 || guess >10){
+            if (guess < 0 || guess > 10) {
                 System.out.println("Invalid input.");
                 System.exit(1);
-                break;
             }
 
             if (guess < GUESSED_NUMBER) {
