@@ -33,6 +33,6 @@ public class Challenge5 {
                 isFirstLetter = true; //sets the validation condition to true in order to validate the next letter;
             }
         }
-        System.out.println(capitalizedFirstLetter); //prints the result.
+        System.out.println("Your new string is: " + capitalizedFirstLetter); //prints the result.
     }
 }

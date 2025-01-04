@@ -16,7 +16,6 @@ public class Challenge15 {
 
         StringBuilder conversionToggleCases = new StringBuilder();
 
-
         for (int i = 0; i < originalString.length(); i++) {
 
             char currentLetter = originalString.charAt(i); //checks all the characters from originalString;
@@ -27,6 +26,6 @@ public class Challenge15 {
                 conversionToggleCases.append(Character.toUpperCase(currentLetter)); //if lower, converts to upper and adds to string;
             }
         }
-        System.out.println(conversionToggleCases); //prints the result.
+        System.out.println("Your new string is: " + conversionToggleCases);
     }
 }
