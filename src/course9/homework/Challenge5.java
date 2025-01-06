@@ -19,9 +19,9 @@ public class Challenge5 {
         System.out.println("Is today 10.12.2019?");
 
         if (currentDate.isEqual(comparisonDate)) {
-            System.out.println("Yes");
+            System.out.println("Yes.");
         } else {
-            System.out.println("No");
+            System.out.println("No. Today is " + currentDate);
         }
     }
 }
