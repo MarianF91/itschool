@@ -19,10 +19,10 @@ public class Challenge14 {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter a string.");
-        StringBuilder firstString = new StringBuilder(scan.nextLine().replace(" ", ""));
+        StringBuilder firstString = new StringBuilder(scan.nextLine());
 
         System.out.println("Enter another string.");
-        StringBuilder secondString = new StringBuilder(scan.nextLine().replace(" ", ""));
+        StringBuilder secondString = new StringBuilder(scan.nextLine());
 
         if (firstString.length() != secondString.length()) { //this checks if the 2 strings have the same number of letters;
             return false;
@@ -40,7 +40,7 @@ public class Challenge14 {
 
         for (int counter : letterCounter) { //checks if all the values in letterCounter are 0;
             if (counter != 0) {
-                return false; //returnse false if it finds any value different from 0;
+                return false; //return false if it finds any value different from 0;
             }
         }
         return true; //default result if we didn't have any false results so far.

@@ -24,16 +24,16 @@ public class Challenge19 {
             System.out.println("Invalid choice.");
         }
 
-        int [] arabNumerals = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-        String[] romanNumerals = {"M", "CM", "D", "CD", "C", "XC", "L" ,"XL", "X", "IX", "V", "IV", "I"};
+        int[] arabNumerals = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        String[] romanNumerals = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
-        for (int i = 0; i < arabNumerals.length; i++){
+        for (int i = 0; i < arabNumerals.length; i++) {
             //runs until our number is lower than anything in arabNumerals and adds the same romanNumerals equivalent if necessary;
-            while(number >= arabNumerals[i]){
-            //adds the corresponding value from romanNumerals to our string;
-            conversionToRoman.append(romanNumerals[i]);
-            //deducts the highest value of arabNumerals from our number and saves the new value to number until it reaches the end;
-            number -= arabNumerals[i];
+            while (number >= arabNumerals[i]) {
+                //adds the corresponding value from romanNumerals to our string;
+                conversionToRoman.append(romanNumerals[i]);
+                //deducts the highest value of arabNumerals from our number and saves the new value to number until it reaches the end;
+                number -= arabNumerals[i];
             }
         }
         return conversionToRoman.toString();

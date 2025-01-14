@@ -4,7 +4,7 @@ public class Challenge6 {
 
     public static void main(String[] args) {
 
-                StringBuilder firstObject = new StringBuilder("You must become a student.");
+        StringBuilder firstObject = new StringBuilder("You must become a student.");
         StringBuilder secondObject = new StringBuilder("You must become a master.\n");
 
         System.out.println("The first phrase is: " + firstObject);

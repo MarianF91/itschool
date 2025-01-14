@@ -12,7 +12,7 @@ public class Challenge12 {
 
         StringBuilder originalString = new StringBuilder(scan.nextLine());
 
-                StringBuilder expansionString = new StringBuilder();
+        StringBuilder expansionString = new StringBuilder();
 
 
         for (int i = 0; i < originalString.length(); i++) {
@@ -29,7 +29,7 @@ public class Challenge12 {
 
                 char previousChar = originalString.charAt(i - 1); //if the condition is met, the value is saved to previousChar;
 
-                for (int j = 0; j < charCounter - 1; j++ ) { //this decides how many times the character is added to the string, based on the saved numeric value;
+                for (int j = 0; j < charCounter - 1; j++) { //this decides how many times the character is added to the string, based on the saved numeric value;
 
                     expansionString.append(previousChar);
                 }

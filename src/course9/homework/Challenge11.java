@@ -35,11 +35,10 @@ public class Challenge11 {
         try {
             time = LocalTime.parse(inputTime);
         } catch (DateTimeParseException e) {
-            System.out.println("Invalid input");
+            System.out.println("Invalid input.");
         }
 
         LocalTime currentTime = LocalTime.now();
-
 
         Duration elapsedTime = Duration.between(currentTime, time).abs();
 

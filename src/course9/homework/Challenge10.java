@@ -17,12 +17,9 @@ public class Challenge10 {
         System.out.println("Enter a date in the format YYYY-MM-DD.");
         String inputDate = scan.nextLine();
 
-
         try {
             LocalDate date = LocalDate.parse(inputDate);
             System.out.println("The date " + date + " is valid.");
-
-
         } catch (Exception e) {
             System.out.println("Invalid date.");
 

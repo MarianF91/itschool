@@ -23,7 +23,7 @@ public class Challenge11 {
 
             if (Character.isUpperCase(currentLetter)) { //checks if the current character is upper case;
 
-                if (conversionToSnakeCase.length() > 0) { //checks if it's the first letter;
+                if (!conversionToSnakeCase.isEmpty()) { //checks if it's the first letter;
                     conversionToSnakeCase.append('_'); //adds underscore if our letter it's not the first one;
                 }
                 conversionToSnakeCase.append(Character.toLowerCase(currentLetter)); //converts the letter to lower case and adds it to the string;

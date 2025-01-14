@@ -9,17 +9,38 @@ public class BonusChallenge {
 
     public static void cineVreaMere() {
 
-        StringBuilder originalFirstString = new StringBuilder("Ana are mere.");
-        StringBuilder originalSecondString = new StringBuilder("Si Ionut are mere.");
+        String originalFirstString = "Ana are mere.";
+        String originalSecondString = "Si Ionut are mere.";
 
         System.out.println("Original strings:\n" + originalFirstString+ "\n" + originalSecondString);
 
-        StringBuilder alteredFirstString = originalFirstString.replace(originalFirstString.length() - 1,
-                originalFirstString.length(), " si ");
-        StringBuilder alteredSecondString = originalSecondString.delete(0,3);
+        String alteredFirstString = "";
+        String alteredSecondString = "";
+        String combinedStrings;
 
-        alteredFirstString.append(alteredSecondString);
+        for (int i = 0; i < originalFirstString.length(); i++){
+            char lettersFirstString = originalFirstString.charAt(i);
 
-        System.out.println("Combined strings: " + alteredFirstString);
+            if (Character.isLetter(lettersFirstString) || Character.isWhitespace(lettersFirstString)){
+                alteredFirstString += lettersFirstString;
+            }
+
+        }
+
+        for (int i = 0; i < originalSecondString.length(); i++){
+            char lettersSecondString = originalSecondString.charAt(i);
+
+            if (Character.isLetter(lettersSecondString) && Character.isUpperCase(lettersSecondString)){
+
+                alteredSecondString += Character.toLowerCase(lettersSecondString);
+            } else {
+
+                alteredSecondString += lettersSecondString;
+            }
+        }
+
+        combinedStrings = alteredFirstString + " " + alteredSecondString;
+
+        System.out.println("Combined strings: " + combinedStrings);
     }
 }

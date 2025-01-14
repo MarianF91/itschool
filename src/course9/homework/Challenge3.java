@@ -25,7 +25,7 @@ public class Challenge3 {
             LocalDate date = LocalDate.parse(inputDate, formatInputDate);
             System.out.println("The result is: " + date);
         } catch (DateTimeParseException e) {
-            System.out.println("Incorrect format.");
+            System.out.println("Incorrect format. You have this error: " + e);
         }
     }
 }
