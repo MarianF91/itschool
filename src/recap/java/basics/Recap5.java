@@ -1,6 +1,6 @@
-package recap;
+package recap.java.basics;
 
-public class JavaBasics5 {
+public class Recap5 {
 
     public static void main(String[] args) {
 
