@@ -1,4 +1,4 @@
-package recap.string.manipulation;
+package recap.lists;
 
 import java.util.ArrayList;
 import java.util.Scanner;
