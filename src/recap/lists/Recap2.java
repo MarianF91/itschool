@@ -3,7 +3,7 @@ package recap.lists;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Lists2 {
+public class Recap2 {
 
     public static void main(String[] args) {
 
