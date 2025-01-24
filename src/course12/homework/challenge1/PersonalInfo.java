@@ -2,13 +2,13 @@ package course12.homework.challenge1;
 
 import java.time.LocalDate;
 
-public class PersonalInfo {
+class PersonalInfo {
 
     String firstName;
     String lastName;
     String sex;
     int age;
-    LocalDate birthday;
+    String birthday;
     long ssn;
 
     @Override

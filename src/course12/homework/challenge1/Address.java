@@ -1,6 +1,6 @@
 package course12.homework.challenge1;
 
-public class Address {
+class Address {
 
     String city;
     String county;
