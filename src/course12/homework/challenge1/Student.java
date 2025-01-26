@@ -3,7 +3,7 @@ package course12.homework.challenge1;
 import java.util.ArrayList;
 import java.util.List;
 
-class Students {
+class Student {
 
     PersonalInfo studentInfo = new PersonalInfo();
     List<String> attendedCourses = new ArrayList<>();
