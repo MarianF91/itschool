@@ -1,6 +1,6 @@
 package course12.homework.challenge1;
 
-class ContactInfo {
+public class ContactInfo {
 
     String email;
     String phoneNumber;

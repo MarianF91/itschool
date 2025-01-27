@@ -1,6 +1,6 @@
 package course12.homework.challenge1;
 
-class Course {
+public class Course {
 
     String hours;
     String description;

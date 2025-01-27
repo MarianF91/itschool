@@ -3,10 +3,10 @@ package course12.homework.challenge1;
 import java.util.ArrayList;
 import java.util.List;
 
-class Teacher {
+public class Teacher {
 
     PersonalInfo teacherInfo = new PersonalInfo();
-    List<String> teachesCourses = new ArrayList<>();
+    List<Course> teachesCourses = new ArrayList<>();
     ContactInfo contactInfo = new ContactInfo();
     Address address = new Address();
 

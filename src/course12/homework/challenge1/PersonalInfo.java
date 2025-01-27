@@ -1,8 +1,6 @@
 package course12.homework.challenge1;
 
-import java.time.LocalDate;
-
-class PersonalInfo {
+public class PersonalInfo {
 
     String firstName;
     String lastName;
