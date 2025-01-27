@@ -1,6 +1,6 @@
 package course12.homework.challenge1;
 
-class Address {
+public class Address {
 
     String city;
     String county;
@@ -8,14 +8,4 @@ class Address {
     String houseNumber;
     String country;
 
-    @Override
-    public String toString() {
-        return "Address{" +
-                "city='" + city + '\'' +
-                ", county='" + county + '\'' +
-                ", street='" + street + '\'' +
-                ", houseNumber='" + houseNumber + '\'' +
-                ", country='" + country + '\'' +
-                '}';
-    }
 }

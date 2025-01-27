@@ -3,20 +3,18 @@ package course12.homework.challenge1;
 import java.util.ArrayList;
 import java.util.List;
 
-class Teacher {
+public class Teacher {
 
     PersonalInfo teacherInfo = new PersonalInfo();
-    List<String> teachesCourses = new ArrayList<>();
+    List<Course> teachesCourses = new ArrayList<>();
     ContactInfo contactInfo = new ContactInfo();
     Address address = new Address();
 
     @Override
     public String toString() {
-        return "Teachers{" +
-                "teacherInfo=" + teacherInfo +
-                ", teachesCourses=" + teachesCourses +
-                ", contactInfo=" + contactInfo +
-                ", address=" + address +
-                '}';
+        return "Teacher: " + teacherInfo.firstName + " " + teacherInfo.lastName +
+                ", Age: " + teacherInfo.age +
+                ", City: " + address.city +
+                ", Email: " + contactInfo.email;
     }
 }
