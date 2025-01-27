@@ -16,6 +16,6 @@ public class Course {
                 "\nHours: " + hours +
                 "\nSchedule: " + schedule +
                 "\nTeacher: " + isTaughtBy +
-                "\nAttending Students: " + attendingStudents;
+                "\nAttending Students: " + attendingStudents + "\n";
     }
 }

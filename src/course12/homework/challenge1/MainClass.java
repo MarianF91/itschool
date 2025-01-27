@@ -7,9 +7,17 @@ public class MainClass {
 
     public static void main(String[] args) {
 
-        List<Course> allCourses = course();
-        List<Student> allStudents = createStudents();
         List<Teacher> allTeacher = createTeachers();
+        List<Student> allStudents = createStudents();
+
+        List<Course> allCourses = new ArrayList<>();
+
+        for (Teacher teacher : allTeacher) {
+            for (Student student : allStudents) {
+                List<Course> courses = course(teacher, student);
+                allCourses.addAll(courses);
+            }
+        }
 
         System.out.println("Students:");
         for (Student student : allStudents) {
@@ -25,7 +33,6 @@ public class MainClass {
         for (Course course : allCourses) {
             System.out.println(course);
         }
-
     }
 
     static List<Student> createStudents() {
@@ -108,55 +115,79 @@ public class MainClass {
         return teacherList;
     }
 
-    public static List<Course> course() {
+    public static List<Course> course(Teacher isTaughtBy, Student attendingStudents) {
 
         List<Course> courseList = new ArrayList<>();
         Course math = new Course();
         math.hours = "2 hours";
         math.description = "Math";
         math.schedule = "Monday at 14:00";
+        math.attendingStudents = attendingStudents.studentPersonalInfo.firstName + " "
+                + attendingStudents.studentPersonalInfo.lastName;
+        math.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(math);
 
         Course computerscience = new Course();
         computerscience.hours = "2 hours";
         computerscience.description = "Computer Science";
         computerscience.schedule = "Monday at 16:00";
+        computerscience.attendingStudents = attendingStudents.studentPersonalInfo.firstName + " "
+                + attendingStudents.studentPersonalInfo.lastName;
+        computerscience.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(computerscience);
 
         Course physics = new Course();
         physics.hours = "2 hours";
         physics.description = "Physics";
         physics.schedule = "Tuesday at 13:00";
+        physics.attendingStudents = attendingStudents.studentPersonalInfo.firstName + " "
+                + attendingStudents.studentPersonalInfo.lastName;
+        physics.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(physics);
 
         Course chemistry = new Course();
         chemistry.hours = "2 hours";
         chemistry.description = "Chemistry";
         chemistry.schedule = "Tuesday at 15:00";
+        chemistry.attendingStudents = attendingStudents.studentPersonalInfo.firstName
+                + " " + attendingStudents.studentPersonalInfo.lastName;
+        chemistry.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(chemistry);
 
         Course biology = new Course();
         biology.hours = "2 hours";
         biology.description = "Biology";
         biology.schedule = "Wednesday at 12:00";
+        biology.attendingStudents = attendingStudents.studentPersonalInfo.firstName
+                + " " + attendingStudents.studentPersonalInfo.lastName;
+        biology.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(biology);
 
         Course geography = new Course();
         geography.hours = "2 hours";
         geography.description = "Geography";
         geography.schedule = "Wednesday at 14:00";
+        geography.attendingStudents = attendingStudents.studentPersonalInfo.firstName
+                + " " + attendingStudents.studentPersonalInfo.lastName;
+        geography.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(geography);
 
         Course english = new Course();
         english.hours = "2 hours";
         english.description = "English";
         english.schedule = "Thursday at 08:00";
+        english.attendingStudents = attendingStudents.studentPersonalInfo.firstName
+                + " " + attendingStudents.studentPersonalInfo.lastName;
+        english.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(english);
 
         Course history = new Course();
         history.hours = "2 hours";
         history.description = "History";
         history.schedule = "Thursday at 10:00";
+        history.attendingStudents = attendingStudents.studentPersonalInfo.firstName
+                + " " + attendingStudents.studentPersonalInfo.lastName;
+        history.isTaughtBy = isTaughtBy.teacherInfo.firstName + " " + isTaughtBy.teacherInfo.lastName;
         courseList.add(history);
 
         return courseList;
