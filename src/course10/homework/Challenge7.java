@@ -32,7 +32,6 @@ public class Challenge7 {
             }
             return firstFruit.compareTo(secondFruit);
         });
-
         System.out.println("Your arranged fruits list is: " + fruitsList);
     }
 }

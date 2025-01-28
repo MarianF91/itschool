@@ -14,7 +14,7 @@ public class Challenge3 {
 
         Scanner scan = new Scanner(System.in);
 
-        ArrayList<String> studentList = new ArrayList<>(10);
+        ArrayList<String> studentList = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
 

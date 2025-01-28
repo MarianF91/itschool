@@ -16,7 +16,7 @@ public class Recap3 {
         String input;
         int convertedToInt;
 
-        System.out.println("Enter a string.");
+        System.out.println("Enter a string:");
         input = scan.nextLine();
 
         convertedToInt = values(input);
@@ -29,11 +29,17 @@ public class Recap3 {
 
         int total = 0;
 
-        for (char letter : input.toCharArray()) {
+        for (int i = 0; i < input.length(); i++) {
+            char character = input.charAt(i);
 
-            total += letter;
+            if (Character.isDigit(character)) {
+                total = total * 10 + (character - '0');
+
+            } else {
+                System.out.println("Invalid input.");
+                return 0;
+            }
         }
-
         return total;
     }
 }

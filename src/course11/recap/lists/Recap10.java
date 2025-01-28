@@ -1,7 +1,6 @@
 package course11.recap.lists;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Recap10 {
 
@@ -14,7 +13,7 @@ public class Recap10 {
     public static ArrayList<Integer> gradesList() {
 
         int[] scores = {90, 85, 78, 88, 92};
-        ArrayList scoresToArray = new ArrayList<>();
+        ArrayList<Integer> scoresToArray = new ArrayList<>();
 
         for (int grade : scores) {
             scoresToArray.add(grade);

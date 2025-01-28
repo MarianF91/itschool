@@ -2,6 +2,7 @@ package course11.recap.lists;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class Recap11 {
 
@@ -16,11 +17,14 @@ public class Recap11 {
 
     public static ArrayList<Integer> listTransformation() {
 
-        int[] randomIntegers = {1, 2, 3, 4, 5, 6, 7};
+        int size = 7;
         ArrayList<Integer> randomIntegersToArray = new ArrayList<>();
+        Random randomIntegers = new Random();
 
-        for (int number : randomIntegers) {
-            randomIntegersToArray.add(number);
+        for (int i = 0; i < size; i++) {
+
+            randomIntegersToArray.add(randomIntegers.nextInt());
+
         }
 
         return randomIntegersToArray;

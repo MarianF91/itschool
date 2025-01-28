@@ -24,28 +24,24 @@ public class Challenge5 {
         while (true) {
 
             System.out.println("Add a city to the list.");
-
             String city = scan.nextLine();
 
-            if (!cityNames.contains(city)) {
+            if (cityNames.contains(city)) {
+                System.out.println("The city is already in the list.");
 
+            } else {
                 cityNames.add(city);
 
                 System.out.println("New city added to the list. Do you wish to add another one?");
 
                 String answer = scan.nextLine();
-
                 if (answer.equalsIgnoreCase("no")) {
                     System.out.println("Your new list is: " + cityNames);
                     break;
-
                 } else if (!answer.equalsIgnoreCase("yes")) {
                     //If the user answers "yes", then the loop moves along on its own.
                     System.out.println("Invalid option.");
                 }
-
-            } else {
-                System.out.println("The city is already in the list.");
             }
         }
     }

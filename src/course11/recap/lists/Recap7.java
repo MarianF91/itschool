@@ -12,14 +12,22 @@ public class Recap7 {
 
     public static void arrayPrinting() {
 
-        int[] numbers = {1, 10, 2, 3, 5, 100, 19, 2500, 17, 9};
         ArrayList<Integer> intList = new ArrayList<>();
 
-        for (int number : numbers) {
-            intList.add(number);
-        }
+        intList.add(1);
+        intList.add(10);
+        intList.add(2);
+        intList.add(3);
+        intList.add(5);
+        intList.add(100);
+        intList.add(19);
+        intList.add(2500);
+        intList.add(17);
+        intList.add(9);
 
-        for (int number : intList) {
+        Integer[] intArray = intList.toArray(new Integer[intList.size()]);
+
+        for (int number : intArray) {
 
             System.out.println("List element: " + number);
         }
