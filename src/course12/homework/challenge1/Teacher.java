@@ -2,7 +2,7 @@ package course12.homework.challenge1;
 
 public class Teacher {
 
-    PersonalInfo teacherInfo = new PersonalInfo();
+    PersonalInfo teacherInfo;
 
       @Override
     public String toString() {
