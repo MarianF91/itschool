@@ -12,7 +12,6 @@ public class Recap3 {
 
     public static String substringExtraction() {
 
-        int counter = 0;
         int startSubstring;
         int endSubstring;
         Scanner scan = new Scanner(System.in);
@@ -22,11 +21,8 @@ public class Recap3 {
 
         char[] stringSize = string.toCharArray();
 
-        for (int i = 0; i < stringSize.length; i++) {
-            counter++;
-        }
 
-        System.out.println("Your string has " + counter + " elements.");
+        System.out.println("Your string has " + stringSize.length + " elements.");
 
         System.out.println("Enter the start and end of a substring to be extracted from it.");
 

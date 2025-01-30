@@ -8,7 +8,7 @@ public class Course {
     String hours;
     String description;
     String schedule;
-    List<Teacher> attendingTeacher = new ArrayList<>();
+    List<Teacher> attendingTeachers = new ArrayList<>();
     List<Student> attendingStudents = new ArrayList<>();
 
     @Override
@@ -16,7 +16,7 @@ public class Course {
         return "Course: " + description +
                 "\nHours: " + hours +
                 "\nSchedule: " + schedule +
-                "\nTeacher: " + attendingTeacher +
+                "\nTeacher: " + attendingTeachers +
                 "\nAttending Students: " + attendingStudents + "\n";
     }
 }

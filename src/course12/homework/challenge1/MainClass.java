@@ -162,7 +162,7 @@ public class MainClass {
 
         // Get teachers and students for the first course
         List<Teacher> teachersForCourse1 = teacherInfo();
-        course1.attendingTeacher.add(teachersForCourse1.getFirst()); // Add the first teacher
+        course1.attendingTeachers.add(teachersForCourse1.getFirst()); // Add the first teacher
 
         List<Student> studentsForCourse1 = studentInfo();
         course1.attendingStudents.add(studentsForCourse1.get(0)); // Add the first student
@@ -178,7 +178,7 @@ public class MainClass {
 
         // Get teachers and students for the second course
         List<Teacher> teachersForCourse2 = teacherInfo();
-        course2.attendingTeacher.add(teachersForCourse2.get(1)); // Add the second teacher
+        course2.attendingTeachers.add(teachersForCourse2.get(1)); // Add the second teacher
 
         List<Student> studentsForCourse2 = studentInfo();
         course2.attendingStudents.add(studentsForCourse2.get(0)); // Add the first student
