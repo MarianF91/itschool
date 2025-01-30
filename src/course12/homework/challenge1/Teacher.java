@@ -1,17 +1,10 @@
 package course12.homework.challenge1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Teacher {
 
-    List<PersonalInfo> teacherInfo;
+    PersonalInfo teacherInfo = new PersonalInfo();
 
-    public Teacher() {
-        teacherInfo = new ArrayList<>();
-    }
-
-    @Override
+      @Override
     public String toString() {
         return "Teacher{" +
                 "teacherInfo=" + teacherInfo +

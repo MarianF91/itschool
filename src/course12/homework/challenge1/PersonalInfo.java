@@ -10,8 +10,8 @@ public class PersonalInfo {
     int age;
     String birthday;
     long ssn;
-    List<Address> homeAddress;
-    List<ContactInfo> contactInfo;
+    Address homeAddress = new Address();
+    ContactInfo contactInfo = new ContactInfo();
 
     @Override
     public String toString() {
