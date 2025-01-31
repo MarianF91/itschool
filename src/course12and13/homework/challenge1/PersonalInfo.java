@@ -1,6 +1,4 @@
-package course12.homework.challenge1;
-
-import java.util.List;
+package course12and13.homework.challenge1;
 
 public class PersonalInfo {
 
