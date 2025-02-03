@@ -2,15 +2,20 @@ package course14.homework.challenge6.cars;
 
 public class Car {
 
-    String make;
-    String model;
-    int year;
+    private final String make;
+    private final String model;
+    private final int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
 
     public void characteristics() {
-
-        make = "A car has been made.";
-        model = "A car has a model.";
-        year = 3000;
+        System.out.println("Make: " + make);
+        System.out.println("Model: " + model);
+        System.out.println("Year: " + year);
     }
 
     public void start() {
@@ -23,5 +28,14 @@ public class Car {
 
     public void accelerate() {
         System.out.println("The car accelerates.");
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                '}';
     }
 }

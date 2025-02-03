@@ -2,20 +2,21 @@ package course14.homework.challenge6.watercraft;
 
 public class SpeedBoat extends Boat {
 
-    double maxSpeed;
-    String engineType;
+    protected double maxSpeed;
+    protected String engineType;
 
-    @Override
-    public void chars() {
-        super.chars();
+    public SpeedBoat(double length, double weight, double maxSpeed, String engineType){
+        super(length, weight);
+        this.maxSpeed = maxSpeed;
+        this. engineType = engineType;
     }
 
-    @Override
+      @Override
     public void sail() {
-        super.sail();
+          System.out.println("Sailing fast on the sea.");
     }
 
     public void turboBoost() {
-
+        System.out.println("Turbo Boost for faster sailing.");
     }
 }

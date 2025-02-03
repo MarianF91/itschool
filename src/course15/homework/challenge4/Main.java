@@ -3,7 +3,7 @@ package course15.homework.challenge4;
 public class Main {
 
     public static void main(String[] args) {
-        SubClass subclass = new SubClass();
+        AbstractClass subclass = new SubClass();
         subclass.aMethod();
         subclass.anotherMethod();
 

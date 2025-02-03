@@ -15,4 +15,9 @@ public class Triangle extends Shape {
     protected double area() {
         return (base*height)/2;
     }
+
+    @Override
+    public String toString() {
+        return "\nThe area for triangle is: " + area();
+    }
 }

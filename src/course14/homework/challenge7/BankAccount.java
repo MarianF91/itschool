@@ -6,37 +6,39 @@ import java.util.List;
 public class BankAccount {
 
     private String accountHolderName;
-    private String accountNumber;
+    private final String accountNumber;
     private double balance;
-    private List<String> accountInfo = new ArrayList<>();
 
+    public BankAccount(String accountHolderName, String accountNumber, double balance) {
+        this.accountHolderName = accountHolderName;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
 
     public double getBalance() {
         return balance;
     }
 
-    public void setAccountHolderName(String accountHolderName) {
-        this.accountHolderName = accountHolderName;
+    public String getAccountHolderName() {
+        return accountHolderName;
     }
 
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+    public String getAccountNumber() {
+        return accountNumber;
     }
 
     public void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public List<String> getAccountInfo() {
-      accountInfo.add(accountHolderName);
-      accountInfo.add(accountNumber);
-      accountInfo.add(String.valueOf(balance));
-      return accountInfo;
+    public String getAccountInfo() {
+        return "Account Holder: " + accountHolderName +
+                ", Account Number: " + accountNumber +
+                ", Balance: " + balance;
     }
 
     @Override
     public String toString() {
         return accountHolderName;
     }
-
 }

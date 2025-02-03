@@ -10,57 +10,36 @@ public class Main {
 
         List<BankAccount> accountList = accountCreation();
 
-        transferFunds(accountList.getFirst(), accountList.get(1),1500);
+        transferFunds(accountList.getFirst(), accountList.get(1));
     }
 
     public static List<BankAccount> accountCreation() {
 
         List<BankAccount> accountList = new ArrayList<>();
         String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
         Random iban = new Random();
-        int length = 24;
 
-        StringBuilder randomIban = new StringBuilder(length);
-        for (int i = 0; i < length; i++) {
-
-            int index = iban.nextInt(chars.length());
-            randomIban.append(chars.charAt(i));
-        }
-
-        BankAccount firstAccount = new BankAccount();
-        firstAccount.setAccountHolderName("Jesus");
-        firstAccount.setAccountNumber(String.valueOf(randomIban));
-        firstAccount.setBalance(3000);
+        BankAccount firstAccount = createAccount("Jesus", iban, chars, 3000);
         accountList.add(firstAccount);
 
-        System.out.println(firstAccount.getAccountInfo());
-
-        BankAccount secondAccount = new BankAccount();
-        secondAccount.setAccountHolderName("Moses");
-
-        iban = new Random();
-
-        randomIban = new StringBuilder(length);
-        for (int i = 0; i < length; i++) {
-
-            int index = iban.nextInt(chars.length());
-            randomIban.append(chars.charAt(i));
-        }
-
-        secondAccount.setAccountNumber(String.valueOf(randomIban));
-        secondAccount.setBalance(0);
-
-        System.out.println(secondAccount.getAccountInfo());
+        BankAccount secondAccount = createAccount("Moses", iban, chars, 0);
         accountList.add(secondAccount);
 
         return accountList;
     }
 
+    private static BankAccount createAccount(String holderName, Random iban, String chars, double initialBalance) {
+        StringBuilder randomIban = new StringBuilder();
+        for (int i = 0; i < 24; i++) {
+            int index = iban.nextInt(chars.length());
+            randomIban.append(chars.charAt(index));
+        }
+        return new BankAccount(holderName, String.valueOf(randomIban), initialBalance);
+    }
+
     public static void transferFunds(BankAccount firstAccount,
-                                     BankAccount secondAccount,
-                                     double amount) {
-        amount = 1500;
+                                     BankAccount secondAccount) {
+        double amount = 1500;
         System.out.println("\nTransfer " + amount + " from " + firstAccount + " to " + secondAccount);
 
         firstAccount.setBalance(firstAccount.getBalance() - amount);

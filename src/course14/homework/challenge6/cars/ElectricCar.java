@@ -2,34 +2,26 @@ package course14.homework.challenge6.cars;
 
 public class ElectricCar extends Car {
 
-    private int batteryCapacity;
-    private int range;
 
-    @Override
-    public void characteristics() {
-        super.characteristics();
+    protected int batteryCapacity;
+    protected int range;
+
+    public ElectricCar(String make, String model, int year, int batteryCapacity, int range) {
+        super(make, model, year);
+        this.batteryCapacity = batteryCapacity;
+        this.range = range;
     }
 
     public void charge() {
-    batteryCapacity = 200000;
-    range = 350;
-        System.out.println("This is for electric car.");
-        System.out.println("This car has the following attributes:\n- Capacity:" + batteryCapacity + " and " + range +
-                " km range.");
+        System.out.println("This car charges.");
     }
 
     @Override
-    public void start() {
-        super.start();
-    }
-
-    @Override
-    public void stop() {
-        super.stop();
-    }
-
-    @Override
-    public void accelerate() {
-        super.accelerate();
+    public String toString() {
+        return "ElectricCar{" +
+                "batteryCapacity=" + batteryCapacity +
+                ", range=" + range +
+                ", " + super.toString() +
+                '}';
     }
 }

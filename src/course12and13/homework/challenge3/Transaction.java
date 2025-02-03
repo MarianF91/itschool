@@ -1,8 +1,8 @@
 package course12and13.homework.challenge3;
 
-public class Transaction {
-    private double amount;
-    private boolean isDeposit;
+public final class Transaction {
+    private final double amount;
+    private final boolean isDeposit;
 
     public Transaction(double amount, boolean isDeposit) {
         this.amount = amount;

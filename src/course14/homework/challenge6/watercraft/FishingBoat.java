@@ -1,21 +1,23 @@
 package course14.homework.challenge6.watercraft;
 
-public class FishingBoat extends Boat{
+public class FishingBoat extends Boat {
 
-    double fishCapacity;
-    String typeOfNet;
+    protected double fishCapacity;
+    protected String typeOfNet;
 
-    @Override
-    public void chars() {
-        super.chars();
+    public FishingBoat(double length, double weight, double fishCapacity, String typeOfNet) {
+        super(length, weight);
+        this.fishCapacity = fishCapacity;
+        this.typeOfNet = typeOfNet;
     }
 
     @Override
     public void sail() {
-        super.sail();
+
+        System.out.println("Fishing on the sea.");
     }
 
-    public void castNet(){
-
+    public void castNet() {
+        System.out.println("Casting nets to catch fish.");
     }
 }

@@ -9,7 +9,7 @@ public class Account {
     private String accountOwnerSSN;
     private String accountCurrency;
     private double initialBalance;
-    private final List<Transaction> transactionList =  new ArrayList<>();
+    private final List<Transaction> transactionList = new ArrayList<>();
 
     //deposits;
     public void deposit(double amount) {
@@ -25,9 +25,13 @@ public class Account {
     //withdrawals;
     public void withdrawal(double amount) {
 
-        if (amount > 0 && amount <= this.initialBalance){
+        if (amount > 0 && amount <= this.initialBalance) {
             this.initialBalance -= amount;
-            transactionList.add(new Transaction (amount, false));
+            transactionList.add(new Transaction(amount, false));
+        } else if (amount > 0 && amount > this.initialBalance) {
+            System.out.println("Insufficient funds.");
+        } else {
+            System.out.println("Invalid amount.");
         }
     }
 
@@ -37,12 +41,13 @@ public class Account {
     }
 
     public void printStatement() {
-        System.out.println("Transactions history for: " + accountOwnerName + ":");
+        System.out.println("Transaction history for: " + accountOwnerName + "\nOwner SSN: " + accountOwnerSSN +
+                "\nAccount Currency: " + accountCurrency + "\nTransactions:");
+
         for (Transaction transaction : transactionList) {
             System.out.println(transaction);
         }
     }
-
 
     public void setAccountOwnerName(String accountOwnerName) {
         this.accountOwnerName = accountOwnerName;

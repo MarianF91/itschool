@@ -2,14 +2,15 @@ package course14.homework.challenge6.watercraft;
 
 public class Boat {
 
-    double length;
-    double weigth;
+    protected double length;
+    protected double weight;
 
-    public void chars(){
-        length = 10;
-        weigth = 100;
+    public Boat(double length, double weight) {
+        this.length = length;
+        this.weight = weight;
     }
 
     public void sail() {
+        System.out.println("Sailing on the sea.");
     }
 }

@@ -15,4 +15,9 @@ public class Parallelogram extends Shape {
     protected double area() {
         return base * height;
     }
+
+    @Override
+    public String toString() {
+        return "\nThe area for parallelogram is: " + area();
+    }
 }

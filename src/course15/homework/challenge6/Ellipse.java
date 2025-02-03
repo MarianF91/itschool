@@ -1,12 +1,12 @@
 package course15.homework.challenge6;
 
-public class Elipse extends Shape{
+public class Ellipse extends Shape{
 
     private final double majorSemiAxe;
     private final double minorSemiAxe;
 
-    protected Elipse(double majorSemiAxe, double minorSemiAxe) {
-        super("Elipse");
+    protected Ellipse(double majorSemiAxe, double minorSemiAxe) {
+        super("Ellipse");
         this.majorSemiAxe = majorSemiAxe;
         this.minorSemiAxe = minorSemiAxe;
     }
@@ -15,5 +15,10 @@ public class Elipse extends Shape{
     @Override
     protected double area() {
         return Math.PI * majorSemiAxe * minorSemiAxe;
+    }
+
+    @Override
+    public String toString() {
+        return "\nThe area for ellipse is: " + area();
     }
 }

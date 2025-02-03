@@ -16,4 +16,5 @@ public class A extends Marks {
     public void getPercentage() {
         System.out.println("Percentage for student A is: " + ((subject1 + subject2 + subject3) / 3) + "%");
     }
+
 }

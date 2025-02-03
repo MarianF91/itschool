@@ -9,10 +9,15 @@ public class Weightlifting extends Workout {
     private int reps;
     private int sets;
 
-    public Weightlifting(LocalDate date, Duration workoutDuration, int reps, int sets) {
+    public Weightlifting(LocalDate date,
+                         Duration workoutDuration,
+                         double usedWeight,
+                         int reps,
+                         int sets) {
         super(date, workoutDuration);
         this.reps = reps;
         this.sets = sets;
+        this.usedWeight = usedWeight;
     }
 
     public double getUsedWeight() {

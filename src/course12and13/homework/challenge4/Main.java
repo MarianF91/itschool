@@ -18,28 +18,28 @@ public class Main {
         List<User> userList = new ArrayList<>();
 
         User user1 = new User();
+
         user1.setName("Running Lover");
         user1.setAge(25);
-        user1.setTargetDistance(10);
+
+        Running running = new Running(LocalDate.now(), Duration.ofMinutes(45), 2, 3);
 
         Objective distance = new Objective();
         distance.setTargetDistance(5);
         user1.getObjectiveList().add(distance);
-        user1.addWorkout(LocalDate.now(), Duration.ofMinutes(45),
-                "Running", 2, 3, 0, 0, 0);
+        user1.addWorkout(running);
         userList.add(user1);
 
         User user2 = new User();
+
         user2.setName("Weightlifting Lover");
         user2.setAge(25);
-        user2.setTargetWeight(100);
 
-
+        Weightlifting weightlifting = new Weightlifting(LocalDate.now(), Duration.ofMinutes(30), 50, 5, 3);
         Objective weight = new Objective();
         weight.setTargetWeight(75);
         user2.getObjectiveList().add(weight);
-        user2.addWorkout(LocalDate.now(), Duration.ofMinutes(45),
-                "Weightlifting", 0, 0, 65, 8, 3);
+        user2.addWorkout(weightlifting);
         userList.add(user2);
 
         System.out.println(userList);

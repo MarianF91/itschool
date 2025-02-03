@@ -1,11 +1,9 @@
 package course12and13.homework.challenge4;
 
-import java.time.Duration;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User extends Objective {
+public class User {
 
     private String name;
     private int age;
@@ -26,23 +24,8 @@ public class User extends Objective {
     }
 
 
-    public void addWorkout(LocalDate date,
-                           Duration duration,
-                           String type,
-                           double distance,
-                           int laps,
-                           double weight,
-                           int reps,
-                           int sets) {
-        if (type.equalsIgnoreCase("Weightlifting")){
-            Weightlifting workoutType = new Weightlifting(date, duration, reps, sets);
-            workoutType.setUsedWeight(weight);
-            workoutHistory.add(workoutType);
-        } else if (type.equalsIgnoreCase("Running")){
-            Running workoutType = new Running(date, duration, laps, distance);
-            workoutType.setDistance(distance);
-            workoutHistory.add(workoutType);
-        }
+    public void addWorkout(Workout workout) {
+        workoutHistory.add(workout);
     }
 
     @Override
