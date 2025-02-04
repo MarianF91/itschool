@@ -3,8 +3,8 @@ package course14.homework.challenge6.cars;
 public class ElectricCar extends Car {
 
 
-    protected int batteryCapacity;
-    protected int range;
+    private final int batteryCapacity;
+    private final int range;
 
     public ElectricCar(String make, String model, int year, int batteryCapacity, int range) {
         super(make, model, year);

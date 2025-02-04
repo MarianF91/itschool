@@ -5,7 +5,7 @@ import java.util.List;
 
 public class BankAccount {
 
-    private String accountHolderName;
+    private final String accountHolderName;
     private final String accountNumber;
     private double balance;
 

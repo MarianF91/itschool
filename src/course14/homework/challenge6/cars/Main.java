@@ -11,7 +11,8 @@ public class Main {
         car.accelerate();
         car.stop();
 
-        ElectricCar electricCar = new ElectricCar("Electric Car", "Model Lightning", 3023, 1000000, 300);
+        ElectricCar electricCar = new ElectricCar("Electric Car", "Model Lightning", 3023,
+                1000000, 300);
         System.out.println("\nThis is for ElectricCar");
         electricCar.characteristics();
         electricCar.start();

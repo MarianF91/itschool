@@ -5,12 +5,7 @@ public class MountainBike extends Bicycle {
     private String tireType;
     private String suspension;
 
-    @Override
-    public void chars() {
-        super.chars();
-    }
-
-    public MountainBike() {
+     public MountainBike() {
         super.chars();
         adjustSuspension();
     }

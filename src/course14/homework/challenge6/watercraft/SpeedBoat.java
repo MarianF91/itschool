@@ -2,8 +2,8 @@ package course14.homework.challenge6.watercraft;
 
 public class SpeedBoat extends Boat {
 
-    protected double maxSpeed;
-    protected String engineType;
+    private final double maxSpeed;
+    private final String engineType;
 
     public SpeedBoat(double length, double weight, double maxSpeed, String engineType){
         super(length, weight);

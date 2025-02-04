@@ -2,8 +2,8 @@ package course14.homework.challenge6.watercraft;
 
 public class FishingBoat extends Boat {
 
-    protected double fishCapacity;
-    protected String typeOfNet;
+    private final double  fishCapacity;
+    private final String typeOfNet;
 
     public FishingBoat(double length, double weight, double fishCapacity, String typeOfNet) {
         super(length, weight);
