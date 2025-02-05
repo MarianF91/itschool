@@ -1,4 +1,4 @@
-package course12.homework.challenge1;
+package course12and13.homework.challenge1;
 
 public class ContactInfo {
 
