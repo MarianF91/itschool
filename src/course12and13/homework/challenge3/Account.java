@@ -10,13 +10,7 @@ public record Account(
         double initialBalance,
         List<Transaction> transactionList) {
 
-    public Account {
-        if (transactionList == null) {
-            transactionList = new ArrayList<>();
-        }
-    }
-
-    public Account deposit(double amount) {
+     public Account deposit(double amount) {
         if (amount > 0) {
             double newBalance = this.initialBalance + amount;
             List<Transaction> newTransactionList = new ArrayList<>(this.transactionList);

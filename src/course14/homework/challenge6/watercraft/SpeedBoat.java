@@ -14,9 +14,10 @@ public class SpeedBoat extends Boat {
       @Override
     public void sail() {
           System.out.println("Sailing fast on the sea.");
+          System.out.println("The boat has " + engineType + " engine type and " + maxSpeed + " max speed.");
     }
 
     public void turboBoost() {
-        System.out.println("Turbo Boost for faster sailing.");
+        System.out.println("Turbo Boost is used for faster sailing.");
     }
 }

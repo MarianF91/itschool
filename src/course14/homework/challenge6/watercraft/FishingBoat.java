@@ -15,6 +15,7 @@ public class FishingBoat extends Boat {
     public void sail() {
 
         System.out.println("Fishing on the sea.");
+        System.out.println("The boat uses " + typeOfNet + " and has " + fishCapacity + " fish capacity.");
     }
 
     public void castNet() {
