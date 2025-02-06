@@ -10,6 +10,6 @@ public class Message {
 
     public void message() {
 
-    notification.sendMessage();
+        notification.sendMessage();
     }
 }
