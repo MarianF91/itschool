@@ -1,12 +1,9 @@
 package course16.homework.challenge2;
 
-public abstract class TeamLeader extends Worker {
+public class TeamLeader extends Employee implements User {
 
     public TeamLeader(String name, String position, String email) {
-        super(name, position, email);
+        super(name, position, email); //to be modified
     }
 
-    public void leader() {
-        System.out.println(getNAME() + " is leading the team.");
-    }
 }
