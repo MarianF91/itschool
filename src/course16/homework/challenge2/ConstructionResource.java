@@ -65,4 +65,14 @@ public class ConstructionResource {
     public void setPaint(double paint) {
         this.paint = paint;
     }
+
+    public void displayResources() {
+        System.out.println("Cement bags: " + getCementBags());
+        System.out.println("Number of bricks: " + getBricks());
+        System.out.println("Steel (kg.): " + getSteel());
+        System.out.println("Wood (cubic meters): " + getWood());
+        System.out.println("Sandstone (square meters): " + getWood());
+        System.out.println("Faience (square meters): " + getFaience());
+        System.out.println("Paint (litres): " + getPaint());
+    }
 }

@@ -2,9 +2,9 @@ package course16.homework.challenge2;
 
 public class Employee implements User{
 
-    private final String name;
-    private final String position;
-    private final String email;
+    private String name;
+    private String position;
+    private String email;
 
     public Employee(String name, String position, String email) {
         this.name = name;
@@ -18,6 +18,10 @@ public class Employee implements User{
 
     public String getPosition() {
         return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public String getEmail() {

@@ -1,13 +1,21 @@
 package course16.homework.challenge2;
 
-public abstract class Admin extends Employee implements User {
+public class Admin extends Employee implements User {
 
-    public Admin(String name, String position, String email) {
-        super(name, position, email); //to be modified
+    public Admin(String name, String email) {
+        super(name, "System Administrator", email); //to be modified
     }
 
-    abstract void createUser();
-    abstract void modifyUser();
-    abstract void deleteUser();
+    void createUser() {
+        System.out.println("User created.");
+    }
+
+    void modifyUser() {
+        System.out.println("User modified.");
+    }
+
+    void deleteUser() {
+        System.out.println("User deleted.");
+    }
 
 }
