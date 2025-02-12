@@ -1,10 +1,10 @@
 package course16.homework.challenge1.compilepolymorphism;
 
-public class MethodOverloading2 {
+public class Operation2 {
 
     public static void main(String[] args) {
 
-        MethodOverloading2 sum = new MethodOverloading2();
+        Operation2 sum = new Operation2();
 
         int firstSum = sum.sum(1,1);
         int secondSum = sum.sum(1,1,1);
