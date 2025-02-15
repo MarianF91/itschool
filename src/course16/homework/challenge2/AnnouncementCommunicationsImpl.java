@@ -6,4 +6,8 @@ public class AnnouncementCommunicationsImpl implements Communications{
     public void sendMessage(Employee recipient) {
         System.out.println("New announcement sent to " + recipient.getName());
     }
+
+    public void sendAnnouncementMessage(Employee recipient, String message) {
+        System.out.println("Announcement to " + recipient.getName() + ": " + message);
+    }
 }

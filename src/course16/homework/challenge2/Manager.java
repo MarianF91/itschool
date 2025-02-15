@@ -3,9 +3,13 @@ package course16.homework.challenge2;
 import java.util.List;
 
 public class Manager extends Employee implements User {
+    private List<Team> teams;
+    private ConstructionResource resources;
 
-    public Manager(String name, String email) {
-        super(name, "Manager", email); //to be modified
+    public Manager(String name, String email, List<Team> teams, ConstructionResource resources) {
+        super(name, "Manager", email);
+        this.teams = teams;
+        this.resources = resources;
     }
 
     public void modifyTeam(Team team, Worker newMember) {
@@ -22,7 +26,7 @@ public class Manager extends Employee implements User {
         communications.sendMessage(recipient);
     }
 
-    public void viewEmployees(List<Team> teams) {
+    public void viewEmployees() {
         System.out.println("Company's Employees:");
         for (Team team : teams) {
             System.out.println("Team Leader: " + team.getLeader().getName());
@@ -34,7 +38,7 @@ public class Manager extends Employee implements User {
         }
     }
 
-    public void viewConstructionResources(ConstructionResource resources) {
+    public void viewConstructionResources() {
         System.out.println("Available Construction Resources:");
         resources.displayResources();
     }

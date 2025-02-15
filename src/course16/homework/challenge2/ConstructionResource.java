@@ -71,7 +71,7 @@ public class ConstructionResource {
         System.out.println("Number of bricks: " + getBricks());
         System.out.println("Steel (kg.): " + getSteel());
         System.out.println("Wood (cubic meters): " + getWood());
-        System.out.println("Sandstone (square meters): " + getWood());
+        System.out.println("Sandstone (square meters): " + getSandstone());
         System.out.println("Faience (square meters): " + getFaience());
         System.out.println("Paint (litres): " + getPaint());
     }
