@@ -1,6 +1,6 @@
 package course16.homework.challenge2;
 
-public abstract class ResourceHandler extends Employee implements User {
+public class ResourceHandler extends Employee implements User {
 
     protected ConstructionResource resources;
 
