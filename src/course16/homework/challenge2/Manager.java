@@ -45,11 +45,6 @@ public class Manager extends ResourceHandler {
     }
 
     @Override
-    public void modifyConstructionResources() {
-        throw new UnsupportedOperationException("Manager cannot modify resources.\n");
-    }
-
-    @Override
     public void userType() {
         System.out.println("User Type: Manager\n");
     }

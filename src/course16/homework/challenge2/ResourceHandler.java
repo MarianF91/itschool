@@ -14,5 +14,4 @@ public abstract class ResourceHandler extends Employee implements User {
         resources.displayResources();
     }
 
-    public abstract void modifyConstructionResources();
 }
