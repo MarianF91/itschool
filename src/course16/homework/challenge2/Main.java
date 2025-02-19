@@ -9,6 +9,10 @@ public class Main {
         Admin admin = createAdmin();
         displayAdmin(admin);
 
+        admin.createUser();
+        admin.modifyUser();
+        admin.deleteUser();
+
         List<Team> teams = getTeams();
         ConstructionResource resources = createConstructionResources();
         Manager manager = createManager(teams, resources);
@@ -20,23 +24,39 @@ public class Main {
         manager.viewEmployees();
         manager.viewConstructionResources();
 
+        manager.userType();
+        manager.userInfo();
+
+        ConstructionEngineer engineer = getConstructionEngineer(resources);
+        engineer.viewConstructionResources();
+        engineer.modifyConstructionResources();
+
+        engineer.userType();
+        engineer.userInfo();
+
         AnnouncementCommunicationsImpl communications = new AnnouncementCommunicationsImpl();
         communications.sendMessage(manager);
+
+        manager.sendGeneralAnnouncement(communications, "Important message for all employees: I found my sock!\n");
+
+        Worker newWorker = new Worker("Jesus", "Christ", "religion4u@constructioncompany.com");
+        manager.modifyTeam(teams.getFirst(), newWorker);
+        manager.changeEmployeePosition(newWorker, "Saviour");
     }
 
     public static List<Team> getTeams() {
         List<Worker> firstTeam = new ArrayList<>();
-        Worker worker1 = new Worker("Employee1", "Worker", "emp1@constructioncompany.com");
-        Worker worker2 = new Worker("Employee2", "Worker", "emp2@constructioncompany.com");
-        TeamLeader tl1 = new TeamLeader("Employee3", "emp3@constructioncompany.com");
+        Worker worker1 = new Worker("Employee1", "Worker", "emp1@constructioncompany.com\n");
+        Worker worker2 = new Worker("Employee2", "Worker", "emp2@constructioncompany.com\n");
+        TeamLeader tl1 = new TeamLeader("Employee3", "emp3@constructioncompany.com\n");
 
         firstTeam.add(worker1);
         firstTeam.add(worker2);
 
         List<Worker> secondTeam = new ArrayList<>();
-        Worker worker3 = new Worker("Employee4", "Worker", "emp4@constructioncompany.com");
-        Worker worker4 = new Worker("Employee5", "Worker", "emp5@constructioncompany.com");
-        TeamLeader tl2 = new TeamLeader("Employee6", "emp6@constructioncompany.com");
+        Worker worker3 = new Worker("Employee4", "Worker", "emp4@constructioncompany.com\n");
+        Worker worker4 = new Worker("Employee5", "Worker", "emp5@constructioncompany.com\n");
+        TeamLeader tl2 = new TeamLeader("Employee6",  "emp6@constructioncompany.com\n");
 
         secondTeam.add(worker3);
         secondTeam.add(worker4);
@@ -50,7 +70,7 @@ public class Main {
         resources.setFaience(500);
         resources.setPaint(1000);
 
-        ConstructionEngineer engineer = new ConstructionEngineer("Employee7", "emp7@constructioncompany.com", resources);
+        ConstructionEngineer engineer = new ConstructionEngineer("Employee7", "emp7@constructioncompany.com\n", resources);
 
         Team team1 = new Team(firstTeam, tl1, engineer);
         Team team2 = new Team(secondTeam, tl2, engineer);
@@ -102,5 +122,9 @@ public class Main {
         resources.setFaience(500);
         resources.setPaint(1000);
         return resources;
+    }
+
+    public static ConstructionEngineer getConstructionEngineer(ConstructionResource resources) {
+        return new ConstructionEngineer("Employee7", "emp7@constructioncompany.com", resources);
     }
 }

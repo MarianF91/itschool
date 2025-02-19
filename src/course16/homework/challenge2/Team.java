@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Team {
 
-    private List<Worker> members;
-    private TeamLeader leader;
-    private ConstructionEngineer engineer;
+    private final List<Worker> members;
+    private final TeamLeader leader;
+    private final ConstructionEngineer engineer;
 
     public Team(List<Worker> members, TeamLeader leader, ConstructionEngineer engineer) {
         this.members = members;

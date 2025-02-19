@@ -7,15 +7,14 @@ public class Admin extends Employee implements User {
     }
 
     void createUser() {
-        System.out.println("User created.");
+        System.out.println("User created.\n");
     }
 
     void modifyUser() {
-        System.out.println("User modified.");
+        System.out.println("User modified.\n");
     }
 
     void deleteUser() {
-        System.out.println("User deleted.");
+        System.out.println("User deleted.\n");
     }
-
 }
