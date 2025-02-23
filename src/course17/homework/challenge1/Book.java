@@ -2,11 +2,11 @@ package course17.homework.challenge1;
 
 public class Book {
 
-    private String title;
-    private long ISBN;
+    private final String title;
+    private final long ISBN;
     private int copies;
-    private String publisher;
-    private Author author;
+    private final String publisher;
+    private final Author author;
 
     public Book(String title, long ISBN, int copies, String publisher, Author author) {
         this.title = title;
@@ -19,45 +19,21 @@ public class Book {
         }
     }
 
-    // Getters and Setters
     public String getTitle() {
-        return title;
-    }
 
-    public void setTitle(String title) {
-        this.title = title;
+        return title;
     }
 
     public long getISBN() {
         return ISBN;
     }
 
-    public void setISBN(long ISBN) {
-        this.ISBN = ISBN;
-    }
-
     public int getCopies() {
         return copies;
     }
 
-    public void setCopies(int copies) {
-        this.copies = copies;
-    }
-
     public Author getAuthor() {
         return author;
-    }
-
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
-
-    public String getPublisher() {
-        return publisher;
-    }
-
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
     }
 
     public void addCopies(int num) {
@@ -68,10 +44,6 @@ public class Book {
         if (this.copies >= num) {
             this.copies -= num;
         }
-    }
-
-    public boolean isAvailable() {
-        return this.copies > 0;
     }
 
     public void displayBookInfo() {

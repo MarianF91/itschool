@@ -62,7 +62,9 @@ public class Member {
     public void listOfBorrowedBooks() {
         for (Book book : borrowedBooks) {
             System.out.println("Book: " + book.getTitle());
-            System.out.println("Author: " + book.getAuthor().getName());
+            if(book.getAuthor() != null){
+                System.out.println("Author: " + book.getAuthor().getName());
+            }
             System.out.println();
         }
     }

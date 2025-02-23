@@ -14,10 +14,8 @@ public class Main {
         Book book2 = new Book("Capra cu trei iezi", 45678, 7, "Second publisher", author2);
 
         Member member1 = new Member("First Member", "First address", "First contact", 123);
-        member1.borrowBook(book1);
 
         Member member2 = new Member("Second Member", "Second address", "Second contact", 456);
-        member2.borrowBook(book2);
 
         Library library = new Library();
         library.addMember(member1);
@@ -27,10 +25,24 @@ public class Main {
         library.displayBooks();
         library.displayMembers();
 
+        System.out.println("Current number of copies: " + "\n- " + book1.getTitle() + ": " + book1.getCopies() +
+                "\n- " + book2.getTitle() + ": " + book2.getCopies());
+
+        member1.borrowBook(book1);
+        book1.removeCopies(1);
+        member1.borrowBook(book2);
+        book2.removeCopies(1);
+
+        member2.borrowBook(book2);
+        book2.removeCopies(1);
+
         System.out.println("List of books borrowed by member1: ");
         member1.listOfBorrowedBooks();
 
         System.out.println("List of books borrowed by member2: ");
         member2.listOfBorrowedBooks();
+
+        System.out.println("New number of copies: " + "\n- " + book1.getTitle() + ": " + book1.getCopies() +
+                "\n- " + book2.getTitle() + ": " + book2.getCopies());
     }
 }
