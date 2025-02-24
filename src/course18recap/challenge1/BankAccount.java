@@ -1,4 +1,4 @@
-package course18.challenge1;
+package course18recap.challenge1;
 
 public class BankAccount {
 
