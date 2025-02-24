@@ -1,20 +1,20 @@
 package course17.homework.challenge2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
 
     private String name;
     private String email;
-    private String shippingAddress;
-    private String billingAddress;
-    private List<Order> orderHistory;
+    private final List<Order> orderHistory;
+    private final OrderHistory orderHistoryViewer;
 
     public Customer(String name, String email, String shippingAddress, String billingAddress) {
         this.name = name;
         this.email = email;
-        this.shippingAddress = shippingAddress;
-        this.billingAddress = billingAddress;
+        this.orderHistory = new ArrayList<>();
+        this.orderHistoryViewer = new HistoryViewerOrderHistoryImpl();
     }
 
     public String getName() {
@@ -33,21 +33,11 @@ public class Customer {
         this.email = email;
     }
 
-    public String getShippingAddress() {
-        return shippingAddress;
+    public void viewHistory() {
+        orderHistoryViewer.viewOrderHistory(orderHistory);
     }
 
-    public void setShippingAddress(String shippingAddress) {
-        this.shippingAddress = shippingAddress;
+    public void addOrder(Order order) {
+        this.orderHistory.add(order);
     }
-
-    public String getBillingAddress() {
-        return billingAddress;
-    }
-
-    public void setBillingAddress(String billingAddress) {
-        this.billingAddress = billingAddress;
-    }
-
-
 }
