@@ -1,4 +1,4 @@
-package course18.challenge6;
+package course18recap.challenge6;
 
 import java.util.ArrayList;
 import java.util.List;
