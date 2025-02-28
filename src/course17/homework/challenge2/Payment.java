@@ -14,14 +14,7 @@ public class Payment {
 
     public void processPayment() {
         this.paymentStatus = PaymentStatus.ACCEPTED;
-        System.out.println("The payment status has been updated to: " + this.paymentStatus);
-    }
-
-    public PaymentStatus getPaymentStatus() {
-        return this.paymentStatus;
-    }
-
-    public String getPaymentMethod(){
-        return this.paymentMethod;
+        System.out.println("The payment status has been updated to: " + this.paymentStatus
+                + "\nPayment amount: " + paymentAmount + "\nPayment method: " + paymentMethod);
     }
 }

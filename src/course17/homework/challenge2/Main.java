@@ -32,5 +32,8 @@ public class Main {
         order.status(OrderStatus.SHIPPED);
 
         customer.viewHistory();
+
+        System.out.println("\nCustomer info: " + "\n- Name: " + customer.getName() + "\n- Email: " + customer.getEmail()
+        + "\n- Shipping Address: " + customer.getShippingAddress() + "\n- Billing Address: " + customer.getBillingAddress());
     }
 }

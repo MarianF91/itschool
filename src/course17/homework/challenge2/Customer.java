@@ -39,6 +39,14 @@ public class Customer {
         this.orderHistory.add(order);
     }
 
+    public String getShippingAddress() {
+        return shippingAddress;
+    }
+
+    public String getBillingAddress() {
+        return billingAddress;
+    }
+
     public void viewHistory() {
         if (orderHistory.isEmpty()) { // orderHistory cannot be null because initialized in constructor
             System.out.println("Order History is empty.");
