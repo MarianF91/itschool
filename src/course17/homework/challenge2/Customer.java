@@ -59,9 +59,9 @@ public class Customer {
                     ", Status: " + order.getOrderStatus());
             System.out.println("Products:");
             for (Product product : order.getProducts()) {
-                System.out.println("  - " + product.getName() +
-                        " (" + product.getDescription() + "), Price: "
-                        + product.getPrice() + ", Quantity: " + product.getQuantity());
+                System.out.println("  - " + product.name() +
+                        " (" + product.description() + "), Price: "
+                        + product.price() + ", Quantity: " + product.quantity());
             }
         }
     }

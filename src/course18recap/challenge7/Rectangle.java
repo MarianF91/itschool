@@ -17,7 +17,8 @@ public class Rectangle extends Shape {
         return length * width;
     }
 
-    public String getName() {
+    @Override
+    public String name() {
         return name;
     }
 }

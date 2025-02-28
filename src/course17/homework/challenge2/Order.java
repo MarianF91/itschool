@@ -5,13 +5,11 @@ import java.util.List;
 public class Order {
 
     private final int orderNumber;
-    private final Customer customerInformation;
     private OrderStatus orderStatus;
     private final List<Product> products;
 
-    public Order(int orderNumber, Customer customerInformation, List<Product> products) {
+    public Order(int orderNumber, List<Product> products) {
         this.orderNumber = orderNumber;
-        this.customerInformation = customerInformation;
         this.products = products;
         this.orderStatus = OrderStatus.PLACED;
     }
@@ -22,10 +20,6 @@ public class Order {
 
     public int getOrderNumber() {
         return orderNumber;
-    }
-
-    public Customer getCustomerInformation() {
-        return customerInformation;
     }
 
     public OrderStatus getOrderStatus() {

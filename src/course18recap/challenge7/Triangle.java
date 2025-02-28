@@ -12,13 +12,15 @@ public class Triangle extends Shape{
         this.base = base;
     }
 
-    public String getName() {
-        return name;
-    }
 
     @Override
     public double area() {
         return (base * height) / 2;
+    }
+
+    @Override
+    public String name() {
+        return name;
     }
 
 }
