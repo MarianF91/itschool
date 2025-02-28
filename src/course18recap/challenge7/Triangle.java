@@ -6,8 +6,8 @@ public class Triangle extends Shape{
     private final double height;
     private final double base;
 
-    public Triangle(String name, double height, double base) {
-        this.name = name;
+    public Triangle(double height, double base) {
+        this.name = "Triangle";
         this.height = height;
         this.base = base;
     }
@@ -20,4 +20,5 @@ public class Triangle extends Shape{
     public double area() {
         return (base * height) / 2;
     }
+
 }

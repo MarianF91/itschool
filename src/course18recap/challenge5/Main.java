@@ -6,6 +6,6 @@ public class Main {
         Animal cat = new Animal("Little Beggar", "cat", "Meow");
 
         System.out.println(cat.animalInfo());
-        System.out.println(cat.getSound());
+        System.out.println(cat.sound());
     }
 }

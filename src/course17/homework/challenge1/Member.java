@@ -6,10 +6,10 @@ import java.util.List;
 public class Member {
 
     private String name;
-    private String address;
-    private String contact;
-    private int id;
-    private List<Book> borrowedBooks;
+    private final String address;
+    private final String contact;
+    private final int id;
+    private final List<Book> borrowedBooks;
 
     public Member(String name, String address, String contact, int id) {
         this.name = name;
@@ -31,24 +31,12 @@ public class Member {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getContact() {
         return contact;
     }
 
-    public void setContact(String contact) {
-        this.contact = contact;
-    }
-
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void borrowBook(Book book) {

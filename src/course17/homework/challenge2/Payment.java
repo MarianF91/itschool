@@ -2,16 +2,26 @@ package course17.homework.challenge2;
 
 public class Payment {
 
-    private double paymentAmount;
-    private String paymentStatus;
+    private final String paymentMethod;
+    private final double paymentAmount;
+    private PaymentStatus paymentStatus;
 
-    public Payment() {
-        this.paymentAmount = paymentAmount;
-        this.paymentStatus = "Pending";
+    public Payment(String paymentMethod, double paymentAmounts) {
+        this.paymentMethod = paymentMethod;
+        this.paymentAmount = paymentAmounts;
+        this.paymentStatus = PaymentStatus.PENDING;
     }
 
     public void processPayment() {
-        this.paymentStatus = "Completed";
-        System.out.println("The payment status has been update to: " + this.paymentStatus);
+        this.paymentStatus = PaymentStatus.ACCEPTED;
+        System.out.println("The payment status has been updated to: " + this.paymentStatus);
+    }
+
+    public PaymentStatus getPaymentStatus() {
+        return this.paymentStatus;
+    }
+
+    public String getPaymentMethod(){
+        return this.paymentMethod;
     }
 }

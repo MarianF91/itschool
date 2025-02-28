@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Library {
 
-    List<Book> books;
-    List<Member> members;
+    private final List<Book> books;
+    private final List<Member> members;
 
     public Library() {
         this.books = new ArrayList<>();

@@ -5,8 +5,7 @@ public class Shape {
     private final double length;
     private final double width;
 
-
-    public Shape(String name, double length, double width) {
+    public Shape(double length, double width) {
         this.length = length;
         this.width = width;
     }
