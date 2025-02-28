@@ -17,7 +17,7 @@ public class Main {
         shapeList.add(circle);
 
         for (Shape shape : shapeList) {
-            System.out.println("The area for " + shape.name() + " is: " + shape.area());
+            System.out.println("The area for " + shape.getName() + " is: " + shape.area());
         }
     }
 }

@@ -2,11 +2,10 @@ package course18recap.challenge7;
 
 public class Circle extends Shape {
 
-    private final String name;
     private final double radius;
 
     public Circle(double radius) {
-        this.name = "Circle";
+        super("Circle");
         this.radius = radius;
     }
 
@@ -15,12 +14,4 @@ public class Circle extends Shape {
         return Math.PI * radius * radius;
     }
 
-    @Override
-    public String name() {
-        return name;
-    }
-
-    public String getName() {
-        return name;
-    }
 }

@@ -2,12 +2,11 @@ package course18recap.challenge7;
 
 public class Rectangle extends Shape {
 
-    private final String name;
     private final double length;
     private final double width;
 
     public Rectangle(double length, double width) {
-        this.name = "Rectangle";
+        super("Rectangle");
         this.length = length;
         this.width = width;
     }
@@ -17,8 +16,4 @@ public class Rectangle extends Shape {
         return length * width;
     }
 
-    @Override
-    public String name() {
-        return name;
-    }
 }

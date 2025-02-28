@@ -2,12 +2,11 @@ package course18recap.challenge7;
 
 public class Triangle extends Shape{
 
-    private final String name;
     private final double height;
     private final double base;
 
     public Triangle(double height, double base) {
-        this.name = "Triangle";
+        super("Triangle");
         this.height = height;
         this.base = base;
     }
@@ -17,10 +16,4 @@ public class Triangle extends Shape{
     public double area() {
         return (base * height) / 2;
     }
-
-    @Override
-    public String name() {
-        return name;
-    }
-
 }
