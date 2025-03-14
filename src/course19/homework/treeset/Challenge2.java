@@ -1,6 +1,5 @@
 package course19.homework.treeset;
 
-import java.util.Iterator;
 import java.util.TreeSet;
 
 public class Challenge2 {
@@ -10,11 +9,7 @@ public class Challenge2 {
         colors.add("green");
         colors.add("blue");
 
-        Iterator<String> colorsIterator = colors.iterator();
-        String color;
-
-        while (colorsIterator.hasNext()){
-            color = colorsIterator.next();
+        for (String color : colors) {
             System.out.println(color);
         }
     }

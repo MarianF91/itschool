@@ -10,7 +10,7 @@ public class Challenge6 {
         colorsMap.put("cold color", "blue");
         colorsMap.put("neutral", "white");
 
-        Map<String, String> colorsMap2 = new HashMap<>(colorsMap);
+        Map<String, String> colorsMap2 = Map.copyOf(colorsMap);
 
         System.out.println(colorsMap2);
     }

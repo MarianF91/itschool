@@ -12,7 +12,7 @@ public class Challenge13 {
 
         System.out.println("The TreeMap is: " + colorsMap);
 
-        String givenKey = "color";
+        String givenKey = "warm color";
 
         System.out.println("Given key: " + givenKey);
 

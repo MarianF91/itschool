@@ -16,5 +16,7 @@ public class Challenge15 {
 
         System.out.println("TreeSet: " + numbers);
         System.out.println("Last Element: " + numbers.getLast());
+        numbers.removeLast();
+        System.out.println("New TreeSet: " + numbers);
     }
 }

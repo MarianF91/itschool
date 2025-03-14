@@ -16,5 +16,7 @@ public class Challenge14 {
 
         System.out.println("TreeSet: " + numbers);
         System.out.println("First Element: " + numbers.getFirst());
+        numbers.removeFirst();
+        System.out.println("New TreeSet: " + numbers);
     }
 }

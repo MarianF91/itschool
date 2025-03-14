@@ -9,11 +9,11 @@ public class Challenge7 {
         colors.add("green");
         colors.add("blue");
 
-        String search = "red";
+        final String SEARCH = "red";
 
-        if (colors.contains("red")){
-            int index = colors.indexOf(search);
-            System.out.println("Element " + "<<" + search + ">>" + " found at index " + index + ".");
+        if (colors.contains(SEARCH)){
+            int index = colors.indexOf(SEARCH);
+            System.out.println("Element " + "<<" + SEARCH + ">>" + " found at index " + index + ".");
         } else {
             System.out.println("Element not found.");
         }

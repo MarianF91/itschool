@@ -10,8 +10,8 @@ public class Challenge19 {
         colors.add("blue");
 
         System.out.println("Original list: " + colors);
-        String removedElement = colors.getFirst();
-        colors.removeFirst();
+        String removedElement =  colors.removeFirst();
+
 
         System.out.println("First element: " + removedElement);
 

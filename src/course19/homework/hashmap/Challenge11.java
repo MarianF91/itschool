@@ -11,7 +11,7 @@ public class Challenge11 {
         colorsMap.put("cold color", "blue");
         colorsMap.put("neutral", "white");
 
-        Set<Map.Entry<String, String>> colorsSet = colorsMap.entrySet();
+        Set<String> colorsSet = colorsMap.keySet();
 
         System.out.println(colorsSet);
     }
