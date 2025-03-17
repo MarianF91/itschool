@@ -10,8 +10,7 @@ public class Challenge19 {
         colors.add("blue");
 
         System.out.println("Original list: " + colors);
-        String removedElement =  colors.removeFirst();
-
+        String removedElement =  colors.removeFirst(); //saved the removed element inside a String variable
 
         System.out.println("First element: " + removedElement);
 
