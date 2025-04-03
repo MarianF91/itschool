@@ -5,7 +5,9 @@ import java.util.List;
 
 public class MaxValueImpl {
     public static void main(String[] args) {
-        MaxValue finder = numbers -> numbers.stream().mapToInt(Integer::intValue).max().getAsInt();
+        MaxValue finder = numbers -> numbers.stream()
+                .max(Integer::compareTo)
+                .orElseThrow();
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
         Integer max = finder.findMax(numbers);
